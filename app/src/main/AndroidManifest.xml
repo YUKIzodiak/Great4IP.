@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a6sigma.great4ip" >
+    package="com.example.a6sigma.great4ip">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,16 +10,33 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".LoginActivity" >
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".SignUpFormActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".AddReminderActivity" />
+        <activity android:name=".message"></activity>
+
+        <activity android:name=".CreateMessageActivity">
+        </activity>
+        <!--<activity android:name=".LocationActivity" />-->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCcPkAa1LDIf71Vaj_FsP7cQr12gS-E4wE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
